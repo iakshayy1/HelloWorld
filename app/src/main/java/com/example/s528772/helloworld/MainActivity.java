@@ -11,7 +11,6 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,6 +50,12 @@ public class MainActivity extends AppCompatActivity {
             }
 
             public void exit(View v){
+                finish();
+                System.exit(0);
+            }
+
+// This is a minor modification
+            public void finish(View v){
                 finish();
                 System.exit(0);
             }
